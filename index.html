@@ -10,22 +10,73 @@
         <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/style/style.css" media="screen"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css'  />
         <script src="assets/script/index.js" defer></script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     </head>
     <body>
         <header>
             <div class="container flexbox">
                 <div class="title">
-                    <h1>Title</h1>
+                    <h1>Ez-Bites</h1>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Projects</a></li>
+                        <li><a href="">Locations</a></li>
                         <li><a href="">About Us</a></li>
-                        <li><a href="">Blog</a></li>
                         <li><a href="">Contact Us</a></li>
+                        <li><a href="">Settings</a></li>
                     </ul>
                 </nav>
         </header>
+        <section class="hero">
+            <div class="hero-overlay">
+                <section class="text-and-img">
+                    <div class="image-wrapper">
+                        <img src="./assets/img/fast-food.png" alt="">
+                    </div>
+                        <article>
+                            <h2>
+                                We are a company based in Winnipeg, Manitoba. Founded by Enjae Antonio. We provide
+                                low delivery <span>times</span> and also lower delivery <span>fees</span> than your favourite apps! Click allow access to your location
+                                to see which restauarnts are available near you!
+                            </h2>
+                        </article>
+                </section>
+            </div>
+        </section>
+        
+        <section class="map-wrapper">
+    
+                <div class="load-screen">
+                    <div class="loader"></div>
+                </div>
+    
+                <div id='map' class="hidden">
+    
+                </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-media">
+                    <a target="_blank" href="https://www.linkedin.com/in/enjae-antonio-a6a8b2256/"><i class="fa-brands fa-linkedin footer-icon"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100070156350933"><i class="fa-brands fa-facebook footer-icon"></i></a>
+                    <a target="_blank" href="https://github.com/EnjaeAntonio"><i class="fa-brands fa-github footer-icon"></a></i>
+                    <a target="_blank" href="https://www.instagram.com/enjaeantonio/"><i class="fa-brands fa-instagram footer-icon"></a></i>
+                </div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="">Locations</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Settings</a></li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                    <h4> Enjae Antonio &copy; 2022. All Rights Reserved</h4>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

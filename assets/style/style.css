@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: var(--app-dark-bg);
+    background-color: var(--app-light-bg);
 }
 
 .container {
@@ -27,9 +27,10 @@ body {
 /* ---------------------------------------------------- */
 /*     Header                                           */
 /* ---------------------------------------------------- */
+
+
 header {
     height: 56px;
-    background-color: #1f2128;
 }
 
 .flexbox {
@@ -37,14 +38,14 @@ header {
 }
 
 .title {
-    width: 25%;
+    width: 50%;
     height: 40px;
 }
 
 .title h1 {
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--app-blue-fb);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--app-red);
     line-height: 56px;
     letter-spacing: 0.2px;
 }
@@ -67,16 +68,174 @@ nav ul li{
 nav ul li a {
     font-size: 14px;
     letter-spacing: 1px;
-    color: #fff;
+    color: var(--app-dark-bg);
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
 }
 
 nav ul li a:hover {
-    text-decoration: underline #add8e6;
+    text-decoration: underline var(--app-red);
 }
 
 nav ul li + li {
     margin-left: 18px;
+}
+
+/* ---------------------------------------------------- */
+
+/* Hero                                      */
+
+/* ---------------------------------------------------- */
+
+.hero{
+    height: 80vh;
+    background-color: var(--app-light-bg);
+    background: rgb(255, 0, 0)url(../img/greek-food-background-traditional-different-greek-dishes-set-greek-food-background-traditional-different-greek-dishes-set-top-view-178761927.jpg) center center / cover ;
+}
+
+.hero-overlay {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    background: rgb(20 24 28 / .75);
+    width: 100%;
+}
+.map-wrapper {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
+
+
+
+.text-and-img {
+    display: grid;
+    place-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+article {
+    width: 750px;
+    margin-top: 30px;
+}
+
+article h2 {
+    color: #fff;
+}
+
+span {
+    color: var(--app-red);
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+    display: none;
+}
+
+.load-screen {
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 60vh;
+    background-color: var(--app-dark-bg);
+    display: grid;
+    place-items: center;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+  }
+  
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.hidden {
+    display: none;
+}
+
+#map {
+    display: block;
+    width: 50%;
+    height: 60vh;
+    color: #fff;
+}
+
+/* ---------------------------------------------------- */
+/* Footer
+/* ---------------------------------------------------- */
+
+footer {
+    background-color: var(--app-dark-bg);
+    display: flex;
+    justify-content: center;
+    padding: 30px 0
+}
+
+.footer-nav{
+    width: 100%;
+}
+
+.footer-nav a {
+    color: rgb(255, 255, 255);
+}
+
+.social-media a {
+    padding: 0 10px;
+}
+
+.social-media{
+    text-align: center;
+}
+
+
+.copyright{
+    text-align: center;
+}
+
+.footer-icon{
+    font-size: 24px;
+}
+
+h4{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+/* ---------------------------------------------------- */
+/* Icons
+/* ---------------------------------------------------- */
+
+.fa-linkedin {
+    color: #0072b1;
+}
+
+.fa-twitter {
+    color: #00acee;
+}
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-facebook {
+    color: #3b5998;
 }
